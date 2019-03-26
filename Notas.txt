@@ -1,0 +1,8 @@
+Hystoripedia V-0.0.1
+Novo modelo com o codeigniter incluido (altamente recomendado o uso de uma IDE para alterar os arquivos);
+
+Para navegar, http://localhost/Historypedia/index.php/control/index(abre index.php dentro da views), 
+onde index.php/nome_da_classe_do_controlador/metodo_do_controlador;
+
+Site para auxílio: https://www.tutorialspoint.com/codeigniter/codeigniter_basic_concepts.htm;
+

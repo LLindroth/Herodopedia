@@ -1,0 +1,147 @@
+/* #################################################################
+    GERENCIAMENTO ARTIGOS/DISCUSSOES
+############################################################ */
+
+.tabela-art{
+    max-width: 80%;
+    margin: 10% auto;
+}
+
+.tabela-art > table > caption{
+	font-size: 1.8em;
+	font-weight: 600;
+	padding: 1em;
+	margin: 0px 2em 1em 2em;
+	border-bottom: 1px solid #0A0909;
+	color: #0A0909;
+}
+
+.tabela-art > table > thead > tr > th {
+	background-color: #0A0909;
+	color: #FCFAED;
+	padding: 0.5em 2em;
+	text-align: center;
+}
+
+.tabela-art > table > tbody > tr > td{
+	color: #0A0909;
+	padding: 0.5em 2em;
+	text-align: left;
+	vertical-align: center;
+}
+
+/* #################################################################
+    GERENCIAMENTO USUARIOS
+############################################################ */
+
+.tabela-users{
+	margin: 6% 5%;
+	max-width: 90%;
+}
+
+.tabela-users > table > caption{
+	font-size: 2em;
+	font-weight: 700;
+	padding: 0px 2em 2em 2em;
+}
+
+.tabela-users > table > .thead-users > tr > th{
+	background-color: #343434;
+	color: #efefef;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	text-align: center;
+}
+
+.tabela-users > table > .tbody-users{
+
+}
+
+.tabela-users > table > .tbody-users > .trow-users{
+	
+}
+
+.tabela-users > table > .tbody-users > .trow-users > .tdata-users{
+	color: #0A0909;
+	font-size: 1em;
+	text-align: center;
+	padding: 1em 1em;
+	border-bottom: 1px solid #0A0909;
+}
+
+
+
+/*  ################################################################
+	APROVAÇOES
+################################################################# */
+.aprovacao{
+    max-width: 80%;
+    margin: 8% auto;
+}
+
+.aprovacao > table > caption{
+	font-size: 1.8em;
+	font-weight: 600;
+	padding: 1em;
+	margin: 0px 2em 1em 2em;
+	border-bottom: 1px solid #0A0909;
+	color: #0A0909;
+}
+
+.aprovacao > table > thead > tr > th{
+	background-color: #0A0909;
+	color: #FCFAED;
+	padding: 0.5em 2em;
+	text-align: center;
+}
+
+.aprovacao > table > tbody > tr > td{
+	color: #0A0909;
+	padding: 0.5em 2em;
+	text-align: left;
+	vertical-align: center;
+}
+.aprovacao > table > tbody > tr > td > a{
+	color: #0A0909;
+}
+.aprovacao > table > tbody > tr > td > a:hover{
+	color: #FCC328;
+}
+
+.aprovacao > table > tbody > tr > .acoes{
+	text-align: center;
+}
+
+.art-null{
+	max-width: 100%;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 600;
+
+}
+
+.art-null > td{
+	padding: 1em;
+}
+
+/*  ################################################################
+	RESOLUCAO CRITICAS
+################################################################# */
+#criticas{
+	max-width: 80%;
+	margin: 5% auto;
+}
+
+#criticas > .titulo-crit {
+
+}
+
+.box-critica{
+	max-width: 90%;
+	margin: 2% auto;
+}
+
+.criticado{
+	color: #fff;
+	font-size: 1.1em;
+}

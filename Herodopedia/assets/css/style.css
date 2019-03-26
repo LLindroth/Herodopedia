@@ -1,0 +1,1369 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@import url("prettyPhoto.css") screen;
+@import url("hoverex-all.css") screen;
+
+/*	################################################################
+	1. ESTRUTURAS GERAIS
+################################################################# */
+	* { 
+		margin: 0;
+		padding: 0px;
+	} 
+
+body { 
+	background: #FCFAED; 
+	margin: 0; 
+	height: 100%; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+p { 
+	padding: 0; 
+	margin-bottom: 12px; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px; 
+	line-height: 24px;
+	margin-top: 10px; 
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#01b2fe;
+}
+
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+
+.centered {
+	text-align: center
+}
+
+/*	################################################################
+	CABEÇALHO
+################################################################# */
+.navbar {
+	min-height: 52px;
+	margin-bottom: 0px;
+
+}
+
+.navbar-default {
+	padding-top: 9px;
+	z-index: 999;
+	background-color: #0A0909;
+	border: none;
+}
+
+.navbar-default .navbar-brand {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.6em;
+	color: #efefef;
+}
+
+.navbar-default .navbar-brand:hover{
+	color: #cccccc;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #FCFAED;
+	font-weight: 600;
+	font-size: 12.5px;
+}
+.navbar-default .navbar-nav > li:hover{
+	background-color: #FCFAED;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #0A0909;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #cccccc;
+	background-color: transparent;
+}
+
+.dropdown-menu {
+	background: #FCFAED;
+}
+
+.dropdown-menu > li > a {
+	color: #0A0909;
+	font-weight: 700;
+	font-size: 12.5px;
+}
+
+.nots-button:hover,
+.nots-button:active,
+.nots-button:focus{
+	color: #0A0909;
+	background-color: #FCFAED;
+}
+
+.nots-button{
+	min-width: 100%;
+	min-height: 100%;
+	background-color: #0A0909;
+	color: #FCFAED;
+	font-weight: 600;
+	font-size: 12.5px;
+	line-height: 20px;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	-webkit-transition: color .4s linear, color .4s linear;
+	-moz-transition: color .4s linear, color .4s linear;
+	-o-transition: color .4s linear, color .4s linear;
+	-ms-transition: color .4s linear, color .4s linear;
+	transition: color .4s linear, color .4s linear;
+	border: none;
+}
+
+.nots{
+	display: hidden;
+	position: absolute;
+	left: -150%;
+	min-width: 250%;
+	max-height: 600%;
+	overflow: scroll;
+	background-color: black;
+	padding: 2px;
+}
+
+.mtb {
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.mb {
+	margin-bottom: 60px;
+}
+
+.mt {
+	margin-top: 60px;
+}
+
+.hline {
+	border-bottom: 2px solid #384452;
+}
+
+.hline-w {
+	border-bottom: 2px solid #ffffff;
+	margin-bottom: 25px;
+}
+
+
+/*  ##########################################################
+    PESQUISAR -----> INDEX
+ ########################################################### */
+#nav-art{
+	margin-top: 1%;
+	padding: 1em 1em;
+	border-bottom: 3px solid #F4F3E6;
+	border-top: 3px solid #F4F3E6;
+	text-align: center;
+}
+
+.pesquisa1{
+	border-right: 2px solid #F4F3E6;
+	padding: 2em;
+}
+
+.pesquisa2{
+	padding: 2em;
+}
+
+.header-nav-art{
+	font-size: 1.6em;
+	color: #0A0909;
+}
+
+
+.pesq-nav{
+	max-width: 50%;
+	margin: 0 auto;
+	background-color: #F4F3E6;
+	min-height: 31px;
+	border: 1px solid #FCC328;
+}
+
+.pesq-nav > .form-control{
+	max-width: 80%;
+	padding-bottom: 0.5em;
+	background: none;
+	border: none;
+	float: left;
+}
+
+.pesq-nav > .form-control:focus{
+	box-shadow: none;
+}
+.btn-pesquisa{
+	background: none;
+	border: none;
+	padding: 5px 2px 5px 2px; 
+	max-width: 17%;
+}
+
+.btn-pesquisa > img{
+	max-width: 100%;
+	min-height: 20px;
+}
+
+.tag-nav{
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.tag-nav > select{
+	padding: 0.5em 0.5em 0.5em 0.3em;
+	background-color: #F4F3E6;
+	min-height: 31px;
+	border: 1px solid #FCC328;
+	text-align: center;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.tag-nav > select:hover{
+	background-color: #FCFAED;
+	border-color: #0A0909;
+}
+
+.tag-nav > select > .tag{
+	color: 
+}
+
+
+/*  ##########################################################
+    ARTICLE -----> INDEX
+ ########################################################### */
+#artigos{
+	margin: 2%;
+	float: left;
+}
+
+#artigos > h4{
+	font-size: 1.8em;
+	border-bottom: 2px solid #F4F3E6;
+	padding-bottom: 1em;
+	color: #0A0909;
+}
+
+.art{
+	padding: 2em;
+	margin-bottom: 2%;
+	border-bottom: 2px solid #F4F3E6;
+	text-align: justify;
+}
+
+.art > span > h4{
+	display: inline-block;
+	border: none;
+	padding: 0px;
+}
+.art > span > h4 > a{
+	font-size: 1.2em;
+	color: #0A0909;
+}
+.art > span > h4 > a:hover{
+	color: #FCC328;
+}
+
+
+.art > span > h6{
+	float: right;
+	padding-top: 1em;
+	font-size: 0.9em;
+	color: #0A0909;
+	display: inline-block;
+}
+
+
+.art > p{
+	color: #0A0909;
+	font-size: 1.03em;
+	padding: 4% 3% 3% 3%;
+	border-top: 2px solid #F4F3E6;
+}
+
+.art > h5{
+	padding-left: 1%;
+	font-weight: 600;
+	font-size: 0.9em;
+	color: #0A0909;	
+}
+.art > h5 > a{
+	color: #0A0909;
+	font-size: 1.1em;
+}
+.art > h5 > a:hover{
+	color: #FCC328;
+}
+
+
+
+
+/* ##########################################################
+   DISCUSSOES -----> INDEX
+############################################################## */
+#discussoes{
+	color: #0A0909;
+	float: right;
+	padding: 1em 3em;
+	margin-top: 2em;
+	border-left: 2px solid #F4F3E6;
+}
+
+#discussoes > h4{
+	font-size: 1.8em;
+	border-bottom: 2px solid #F4F3E6;
+	padding-bottom: 1em;
+}
+
+.disc{
+	max-width: 98%;
+	margin-top: 5%;
+	padding: 1em;
+	color: #0A0909;
+	border-bottom: 2px solid #F4F3E6;
+}
+
+.disc > h4{
+	text-align: center;
+	font-style: normal;
+}
+
+.disc > h4 > a{
+	font-weight: 600;
+	font-size: 1.1em;
+	color: #0A0909;
+}
+
+.disc > h4 > a:hover{
+	font-weight: 700;
+	color: #FCC328;
+}
+
+.disc > h5{
+	font-size: 0.95em;
+	text-align: center;
+	color: #383838;
+}
+
+.disc > h5 > a{
+	font-size: 1em;
+	color: #0A0909;
+}
+.disc > h5 > a:hover{
+	font-style: italic;
+	color: #FCC328;
+}
+
+.disc > h6{
+	font-size: 0.95em;
+}
+.disc > h6 > a{
+	font-size: 0.95em;
+	color: #0A0909;
+}
+.disc > h6 > a:hover{
+	color: #FCC328;
+}
+.disc > p{
+	font-style: normal;
+	text-align: justify;
+	font-size: 1.05em;
+}
+
+
+/*      ################################################################
+        MOSTRA ARTIGO
+################################################################# */
+.art-header {
+	width: 85%;
+	left: 8%;
+	padding: 1.5%;
+	background-color: #FCC328;
+	box-shadow: 0px 0px 12px 0px #201F1F;
+	z-index: 4;
+}
+
+.header-fixed-top{
+	position: fixed;
+	padding-top: 5.5%;
+}
+
+.art-titulo{
+	display: inline;
+	color: #0A0909;
+}
+
+.art-usuario{
+   font-size: 1em;
+   display: inline;
+   vertical-align: center;
+   float: right;
+}
+
+.art-usuario a{
+	color: #0A0909;
+}
+
+.artigo_cont{
+    margin: 10% auto;
+    max-width: 95%;
+}
+
+.conteudo_art{
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 100%;
+    border-bottom: 2px solid #F4F3E6;
+}
+
+.conteudo_art > p {
+	text-align: justify;
+    font-size: 1.2em;
+    font-family: serif;
+    line-height: 1.45em;
+}
+
+.disc_art{
+    margin: 5% auto;
+    max-width: 85%;
+    padding: 3% 5%;
+    border-left: 2px solid #F4F3E6;
+    border-right: 2px solid #F4F3E6;
+}
+
+.disc_art > h3 {
+    border-bottom: 2px solid #F4F3E6;
+    padding: 0em 2em 1.5em 2em;
+}
+
+.discussoes{
+    margin: 3% 2%;
+    border-bottom: 2px solid #F4F3E6;
+    padding: 1% 2% 5% 2%;
+}
+
+.discussoes > h4 > a{
+	color: #0A0909;
+}
+
+.discussoes > h4 > a:hover {
+	color: #EDB100;
+}
+
+.discussoes > p{
+	font-size: 1.1em;
+	padding-left: 2%;
+}
+
+.semdiscussoes{
+    margin: 3% 2%;
+    padding: 1% 2%;
+}
+
+
+/*      ################################################################
+        MOSTRA DISCUSSÃO
+################################################################# */
+.disc-header {
+	width: 85%;
+	left: 8%;
+	padding-top: 2%;
+	z-index: 4;
+}
+
+.art-name{
+	width: 100%;
+	background-color: #FCC328;
+	padding: 3em 1.5em 0.5em 1.5em;
+}
+
+.art-name > h2 {
+	margin:  0;
+	font-size: 1.4em;
+}
+.art-name > h2 > a{
+	color: #0A0909;
+}
+.art-name > h2 > a:hover{
+	color: #F4F3E6;
+}
+
+.disc-name{
+	width: 80%;
+	margin: 0 auto;
+	background-color: #EEB817;
+	padding: 1%;
+}
+
+.disc-name > h2 {
+	margin: 0;
+	font-size: 1.4em;
+	display: inline-block;
+	color: #0A0909;
+}
+
+.disc-name > h3{
+	font-size: 1em;
+	display: inline-block;
+	float: right;
+	margin: 0;
+	color: #0A0909;
+}
+.disc-name > h3 > a{
+	color: #0A0909;
+}
+.disc-name > h3 > a:hover{
+	color: #F4F3E6;
+}
+
+.disc_cont{
+    margin: 10% auto 4% auto;
+    max-width: 95%;
+}
+
+.conteudo_disc{
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 100%;
+    border-bottom: 2px solid #F4F3E6;
+}
+
+.conteudo_disc > p {
+	text-align: justify;
+    font-size: 1.2em;
+    font-family: serif;
+    line-height: 1.45em;
+}
+
+.com-disc{
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 1em 3em;
+    border-left: 2px solid #F4F3E6;
+    border-right: 2px solid #F4F3E6;
+}
+
+.com-disc > .titulo{
+	font-size: 1.9em;
+	padding-bottom: 1em;
+	color: #0A0909;
+}
+
+.com-disc > .comentario{
+	padding: 1em 3em;
+	
+}
+
+.com-disc > .comentario > h4{
+	color: #0A0909;
+	max-width: 100%;
+	border-top: 0.4em double #F4F3E6;
+	padding: 1em 0.5em;
+}
+.com-disc > .comentario > h4 > a{
+	color: #0A0909;
+}
+.com-disc > .comentario > h4 > a:hover{
+	color: #EDB100;
+}
+
+.com-disc > .comentario > p{
+	font-size: 1.1em;
+	max-width: 100%;
+	text-align: justify;
+	padding: 0em 1.5em 0em 1.5em;
+}
+
+.com-disc > .comentario > h6{
+	padding: 1em 0.7em 0em 0.7em;
+	max-width: 100%;
+}
+
+.form-comment{
+	max-width: 70%;
+	margin: 3em auto;
+	padding: 2em 5em;
+    border-top: 2px solid #F4F3E6;
+}
+
+.form-comment > label{
+	font-size: 1.4em;
+}
+
+.form-comment > textarea{
+	max-width: 98%;
+	margin: 1%;
+	border: none;
+	border-radius: 0%;
+}
+
+.form-comment > textarea:hover{
+	box-shadow: 0px 0px 10px 1px #252525;
+}
+
+
+/*  ##########################################################
+    PESQUISA
+ ########################################################### */
+.h1-pesquisa{
+	text-align: center;
+	margin: 3% auto 1% auto;
+	color: #0A0909;
+}
+.h2-pesquisa{
+	text-align: center;
+	margin: 0.5% 4%;
+	border-bottom: 2px solid #F4F3E6;
+	color: #0A0909;
+	padding: 1em 1em 2em 1em;
+}
+
+
+
+/*  ##########################################################
+    PERFIL
+ ########################################################### */
+
+.perfil{
+	max-width: 50%;
+	margin: 10% auto;
+}
+
+.sugestao > table > caption{
+	font-size: 1.8em;
+	font-weight: 600;
+	padding: 1em;
+	margin: 0px 2em 1em 2em;
+	border-bottom: 1px solid #0A0909;
+	color: #0A0909;
+}
+
+.sugestao > table > thead > tr > th{
+	background-color: #0A0909;
+	color: #FCFAED;
+	padding: 0.5em 2em;
+	text-align: center;
+}
+
+.sugestao > table > tbody > tr > td{
+	color: #0A0909;
+	padding: 0.5em 2em;
+	text-align: left;
+	vertical-align: center;
+}
+.sugestao > table > tbody > tr > td > a{
+	color: #0A0909;
+}
+.sugestao > table > tbody > tr > td > a:hover{
+	color: #FCC328;
+}
+
+.sugestao > table > tbody > tr > .acoes{
+	text-align: center;
+}
+
+
+/*  ##########################################################
+    HISTORICO DE EDICOES
+ ########################################################### */
+.historico{
+	max-width: 50%;
+	margin: 13% auto;
+}
+
+.historico > table > thead > tr > th{
+	background-color: #0A0909;
+	color: #FCFAED;
+	padding: 0.5em 2em;
+	text-align: center;
+}
+
+.historico > table > tbody > tr > td{
+	color: #0A0909;
+	padding: 0.5em 2em;
+	text-align: center;
+	vertical-align: center;
+}
+.historico > table > tbody > tr > td > a{
+	color: #0A0909;
+}
+.historico > table > tbody > tr > td > a:hover{
+	color: #FCC328;
+}
+
+.historico > table > tbody > tr > .acoes{
+	text-align: center;
+}
+
+/*  ################################################################
+	CRIAÇÃO DE ARTIGO / EDIÇÃO DE ARTIGO
+################################################################# */
+
+#inputTitulo{
+	border: none;
+	box-shadow: none;
+	background: none;
+	font-size: 2em;
+	color: #000;
+	margin-bottom: 2%;
+}
+#inputTitulo:active {
+	border: none;
+}
+#inputTitulo:focus{
+	border: none;
+	outline: none;
+}
+#inputTitulo::-webkit-input-placeholder {
+   color: #F4F3E6;
+}
+#inputTitulo::-moz-placeholder { /* Firefox 18- */
+   color: #F4F3E6; 
+}
+#inputTitulo::-moz-placeholder {  /* Firefox 19+ */
+   color: #F4F3E6; 
+}
+#inputTitulo::-ms-input-placeholder {  
+   color: #F4F3E6;  
+}
+
+
+#inputTexto{
+	max-width: 98%;
+	min-height: 40%;
+}
+
+.label-tag{
+	margin: 1% 40%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#inputTag{
+	max-width: 20%;
+	margin: 0.4em auto;
+}
+
+#botao{
+	max-width: 15%;
+	padding: 0.5em;
+	background-color: #0e0e0e;
+	margin: 3% auto;
+}
+
+#botao:hover{
+	background-color: #343434;
+}
+
+
+
+/*  ################################################################
+	LOGIN FORM
+################################################################# */
+
+.form-signin {
+  max-width: 20%;
+  padding: 15px;
+  margin: 13% auto;
+}
+
+
+
+.form-signin .form-signin-heading{
+  font-size: 2.2em;
+  text-align: center;
+  border-bottom: 2px dashed #0A0909;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+  color: #0A0909;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #EEB817;
+  color: #0A0909;
+  min-width: 200px;
+}
+
+.form-signin .form-label{
+  margin-top: 5%;
+  font-size: 1.2em;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+  border: 1px dashed #0A0909;
+  /*  box-shadow: none;*/
+  box-shadow: 0px 0px 10px 1px #000;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn{
+	margin: 5% auto;
+}
+
+.btn-primary{
+	background-color: #0A0909;
+	border: none;
+	color: #F2EBE2;
+}
+
+.btn-primary:hover{
+	background-color: #EEB817;
+	color: #0A0909;	
+}
+
+.error-box{
+	max-width: 15%;
+	position: absolute;
+	left: 42.5%;
+	top: 5%;
+	padding: 0.5em 2em 2em 2em;
+	border: 2px solid #0A0909;
+	text-align: center;
+}
+
+.error-box > h2{
+	line-height: 1.8em;
+	margin-top: 5px;
+}
+
+.error-box > h6 {
+	font-size: 1em;
+	padding-bottom: 1em;
+}
+
+.error-button:hover,
+.error-button:active,
+.error-button:focus{
+	/*color: #0A0909;*/
+	background-color: #EEB817;
+	color: #0A0909;
+}
+
+.error-button{
+	min-width: 50%;
+	min-height: 100%;
+	background-color: #0A0909;
+	color: #FCFAED;
+	font-weight: 600;
+	font-size: 12.5px;
+	line-height: 20px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	-webkit-transition: color .4s linear, color .4s linear;
+	-moz-transition: color .4s linear, color .4s linear;
+	-o-transition: color .4s linear, color .4s linear;
+	-ms-transition: color .4s linear, color .4s linear;
+	transition: color .4s linear, color .4s linear;
+	border: none;
+}
+
+.form-signin > a{
+	color: #F4F3E6;
+}
+
+.form-signin > a > span{
+	position: absolute;
+	left: 1.5%;
+	top: 1.5%;
+	background-color: #0A0909;
+	font-size: 2em;
+	padding: 0.7% 0.7% 0.6% 0.6%;
+	border-radius: 50%;
+}
+
+/*  ################################################################
+	REGISTER FORM
+################################################################# */
+
+.form-register {
+  max-width: 23%;
+  padding: 15px;
+  margin: 3.5% auto;
+}
+
+.form-register .form-register-heading{
+  font-size: 2.2em;
+  text-align: center;
+  border-bottom: 2px dashed #0A0909;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+  color: #0A0909;
+}
+
+.form-register .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #EEB817;
+  color: #0A0909;
+  margin-bottom: 1em;
+  border-radius: 0;
+}
+
+.form-register .form-label{
+  margin-top: 5%;
+  font-size: 1.2em;
+}
+
+.form-register .form-control:focus {
+  z-index: 2;
+  border: 1px dashed #0A0909;
+  /*  box-shadow: none;*/
+  box-shadow: 0px 0px 10px 1px #000;
+}
+
+.btn{
+	margin-top: 2%;
+}
+
+.error-box-r{
+	max-width: 15%;
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	padding: 0.5em 2em 2em 2em;
+	border: 2px solid #0A0909;
+	text-align: center;
+}
+
+.error-box-r > h2{
+	line-height: 1.8em;
+	margin-top: 5px;
+}
+
+.error-box-r > h6 {
+	font-size: 1em;
+	padding-bottom: 1em;
+}
+
+.form-register > .dadosInput{
+	position: absolute;
+	display: hidden;
+	left: 63%;
+	top: 68%;
+	max-width: 15%;
+	z-index: 2;
+	font-size: 0.95em;
+}
+
+.form-register > #inputPassword:focus > .dadosInput{
+	display: block;
+}
+
+.form-register > .dadosInput > ul{
+	list-style: none;
+}
+
+.form-register > a{
+	color: #F4F3E6;
+}
+
+.form-register > a > span{
+	position: absolute;
+	left: 1.5%;
+	top: 1.5%;
+	background-color: #0A0909;
+	font-size: 2em;
+	padding: 0.7% 0.7% 0.6% 0.6%;
+	border-radius: 50%;
+}
+
+/*  ################################################################
+	CRITICA FORM
+################################################################# */
+.critica-form{
+	max-width: 60%;
+	margin: 8em auto;
+}
+
+.critica-heading{
+	text-align:center;
+	border-bottom: 2px solid #F4F3E6;
+}
+
+.label-crit{
+	font-size: 1em;
+	max-width: 100%;
+	margin: 1em auto;
+}
+
+
+
+/*	################################################################
+	SITE WRAPS
+################################################################# */
+
+#headerwrap {
+	max-width: 100%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+#headerwrap h3, h5 {
+	color: white;
+	font-weight: 400;
+}
+
+#headerwrap h1 {
+	color: white;
+	margin-bottom: 25px;
+}
+
+#headerwrap .img-responsive {
+	margin: 0 auto;
+}
+
+/* Services Wrap */
+#service {
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+
+#service i {
+	color: #00b3fe;
+	font-size: 60px;
+	padding: 15px;
+}
+
+/* Portfolio Wrap */
+#portfoliowrap {
+	padding-top: 60px;
+	margin-bottom: 60px;
+	display: block;
+	text-align: center
+}
+
+#portfoliowrap h3 {
+	margin-bottom: 25px;
+}
+
+.portfolio {
+	padding:0 !important;
+	margin:0 !important;
+	display:block;
+}
+
+
+.portfolio-item .title:before {border-radius:0; display:none}
+.portfolio-item p {margin:0px 0 30px;}
+.portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;}
+
+
+.tpl6 h3
+{
+	color:#fff;
+	margin:0;
+	padding:40px 5px 0;
+	font-size:16px;
+	text-transform:uppercase;
+}
+.tpl6 .dmbutton
+{
+	display:inline-block;
+	margin:30px 5px 20px 5px;
+	font-size:13px;
+}
+
+.tpl6 .bg
+{
+	height:100%;
+	width:100%;
+	background-color:#00b3fe;
+	background-color:rgba(0,179,254,.9);
+	text-align:center;
+}
+
+/* Testimonials Wrap */
+#twrap {
+	background: url(../img/t-back.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding-top:60px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#twrap i {
+	font-size: 50px;
+	color: white;
+	margin-bottom: 25px;
+}
+
+#twrap p {
+	color: white;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+/* clients logo */
+#cwrap {
+	background: #f7f7f7;
+	margin-top: 0px;
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+#cwrap h3 {
+	margin-bottom: 60px;
+}
+
+/* ########################################################
+ Footer
+ ######################################################## */
+
+#footerwrap {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: #0A0909;
+}
+
+#footerwrap p {
+	color: #FCFAED;
+}
+
+#footerwrap h4 {
+	color: #FCFAED;
+}
+
+#footerwrap i {
+	font-size: 30px;
+	color: #FCFAED;
+	padding-right: 25px;
+}
+
+#footerwrap i:hover {
+	color: #00b3fe
+}
+
+/*	################################################################
+	PAGE CONFIGURATIONS
+################################################################# */
+/* General Tweaks */
+
+#blue {
+	background: #00b3fe;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#blue h3 {
+	color: white;
+	margin-left: 15px;
+}
+
+.ctitle {
+	color: #00b3fe;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+csmall {
+	font-size: 12px;
+	color: #b3b3b3;
+}
+csmall2 {
+	font-size: 12px;
+	color: #f39c12
+}
+
+.spacing {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.badge-theme {
+	background: #00b3fe;
+}
+
+/* Contact Page */
+#contactwrap {
+	background: url(../img/contact.jpg) no-repeat center top;
+	margin-top: -60px;
+	padding-top:0px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 400px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Blog Page */
+.popular-posts { 
+	margin: 0px;
+	padding-left: 0px;
+	}
+	
+.popular-posts li {
+	list-style: none; 
+	margin-bottom: 20px; 
+	min-height: 70px;
+}
+.popular-posts li a, 
+.popular-posts li a:hover {
+	color:#2f2f2f; 
+	text-decoration: none;
+	}
+	
+.popular-posts li img {
+	float: left; 
+	margin-right: 20px;
+	}
+	
+.popular-posts li em {
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	color: #b3b3b3
+	}
+
+.popular-posts p {
+	line-height: normal;
+	margin-bottom: auto;
+}	
+
+.share i {
+	padding-right: 15px;
+	font-size: 18px;
+}
+
+@media (min-width: 200px) and (max-width: 850px){
+	.form-signin{
+		max-width: 50%;
+	}
+	.form-signin .form-signin-heading{
+		font-size: 1.5em;
+	}
+	.error-box{
+		max-width: 30%;
+
+	}
+	.error-box > h2{
+		line-height: 1.2em;
+		margin-top: 3px;
+	}
+
+	.error-box > h6 {
+		font-size: 0.7em;
+		padding-bottom: 0.7em;
+	}
+	.form-signin > a > span{
+		left: 1%;
+		top: 1%;
+		font-size: 1.2em;
+		padding: 0.8% 0.8% 0.7% 0.7%;
+	}
+
+	.form-register{
+		max-width: 50%;
+	}
+	.form-register .form-register-heading{
+		font-size: 1.5em;
+	}
+	.form-register > a > span{
+		left: 1%;
+		top: 1%;
+		font-size: 1.2em;
+		padding: 0.8% 0.8% 0.7% 0.7%;
+	}
+	.form-register > .dadosInput{
+		left: 63%;
+		top: 62%;
+		max-width: 20%;
+		z-index: 2;
+		font-size: 0.85em;
+	}
+}
